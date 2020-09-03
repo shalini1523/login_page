@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col s6 offset-s3">
+    <div class="card">
+      <div class="card-content">
+        <h3>Search in mails</h3>
+        <div class="Soft-Suave" (click)="select.open()"><img src="../../assets/icon.jpg" height="50" width="50"/></div>
+<!--        <button (click)= select.open()> <br> <br>-->
+<!--        <img src="../../assets/icon.jpg" height="50" width="50"/>-->
+<!--        <button mat-icon-button matTooltip="" (click)=select.open()>-->
+<!--          <mat-icon><img src="../../assets/icon.jpg" height="50" width="50"/></mat-icon>-->
+          <mat-select #select [(ngModel)]="setLang">
+            <h2>Gamil</h2>
+            <mat-option (click)="changeLang()" value="">All inboxes</mat-option>
+            <mat-option (click)="changeLang()" value="">Sent</mat-option>
+            <mat-option (click)="changeLang()" value="">Draft</mat-option>
+            <mat-option (click)="changeLang()" value="">Bin</mat-option>
+          </mat-select>
+      </div>
+    </div>
+  </div>
+</div>
+
+

@@ -1,0 +1,49 @@
+<div class="row">
+  <div class="col s6 offset-s3">
+    <h3 class="card-content">
+        <div class="Soft-Suave"><img src="../../assets/logo.png" height="50" width="50"/>
+          <h3>Soft Suave</h3></div>
+<!--        <h3>Soft Suave</h3> <br>--->
+        <h1><p [ngStyle]="{'color':'black'}"> Learn about:{{title}}</p></h1>
+        <i class="material-icons prefix">Soft Suave is a fast growing Information <br>Technology (IT) company
+          headquartered in one of the largest <br> technology-hubs of India
+          Chennai with a development centre in <br> Bangalore and a sales office in Maryland
+          United States.</i>
+        <div class="row">
+          <p class="input-field col s12">
+            <div>
+            <input type="text" id="input" value="" name="" [(ngModel)]="question">
+        </div> <br>
+            <button class="btn-large" placeholder="Enter Question" (click)="addNewQuestion()">New Question</button>
+          </div>
+      <div *ngFor="let question of questionList; let i = index">
+        <div class="row">
+          <p class="input-field col s12">
+            <p class="material-icons prefix">{{question.question}}</p>
+            <i (click)="likeIncrement(i)"> <img src="../../assets/like1.jpg" height="20" width="20"/></i> <p>{{question.like}}</p>
+            <i (click)="disLikelikeIncrement(i)"> <img src="../../assets/dislike1.jpg" height="20" width="20"/></i> <p>{{question.dislike}}</p>
+            <i (click)="deleteQuestion(i)"> <img src="../../assets/delete.jpg" height="20" width="20"/></i>
+          </div>
+        </div>
+
+<!--        <div class="row">-->
+<!--          <div class="input-field col s12">-->
+<!--            <p class="material-icons prefix">Internationalization (i18n) in Angular 5</p>-->
+<!--            <img src="../../assets/like1.jpg" height="20" width="20"/>-->
+<!--            <img src="../../assets/dislike1.jpg" height="20" width="20"/>-->
+<!--            <img src="../../assets/delete.jpg" height="20" width="20"/>-->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--        <div class="row">-->
+<!--          <div class="input-field col s12">-->
+<!--            <p class="material-icons prefix">Should I can care about AOT?</p>-->
+<!--           <i (click)="likeIncrement()"> <img src="../../assets/like1.jpg" height="20" width="20"/></i> <p>{{likesCount}}</p>-->
+<!--            <img src="../../assets/dislike1.jpg" height="20" width="20"/>-->
+<!--            <img src="../../assets/delete.jpg" height="20" width="20"/>-->
+<!--          </div>-->
+<!--        </div>-->
+    </h3>
+      </div>
+    </div>
+

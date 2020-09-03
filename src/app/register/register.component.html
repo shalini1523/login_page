@@ -1,0 +1,45 @@
+<div class="row">
+  <div class="col s6 offset-s3">
+    <div class="card">
+      <div class="card-content">
+        <h3>Registration Form</h3><br><br>
+<!--        <h1> <p [ngStyle]="{'color':'green'}"> Registration {{title}}</p> </h1>-->
+        <form [formGroup]="registerForm">
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">First_Name</i>
+              <input type="text" name="Name" formControlName="firstName" class="inputAlign">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">Last_Name</i>
+              <input type="text" formControlName="lastName" name="Name" class="inputAlign">
+            </div>
+          </div>
+
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">Email</i>
+                <input type="text" name="Email" formControlName="email" class="inputAlign">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">Mobile_number</i>
+                <input type="number" name="Number" formControlName="phoneNumber" class="inputAlign">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s12">
+                <button class="btn-large btn-submit" (click)="submit()" type="submit">SUBMIT</button>
+              </div>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

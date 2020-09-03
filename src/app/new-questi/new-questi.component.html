@@ -1,0 +1,6 @@
+<div *ngFor="let question of questionList; let i = index">
+  <p class="material-icons prefix">{{question.question}}</p>
+  <i (click)="likeIncrement(i)"> <img src="../../assets/like1.jpg" height="20" width="20"/></i> <p>{{question.like}}</p>
+  <i (click)="disLikelikeIncrement(i)"> <img src="../../assets/dislike1.jpg" height="20" width="20"/></i> <p>{{question.dislike}}</p>
+  <i (click)="deleteQuestion(i)"> <img src="../../assets/delete.jpg" height="20" width="20"/></i>
+</div>

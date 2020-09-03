@@ -1,0 +1,31 @@
+<div class="row">
+  <div class="col s6 offset-s3">
+    <div class="card">
+      <div class="card-content">
+        <h3>Login Form</h3> <br><br>
+<!--        <p [ngStyle]="{'color':'blue'}"> Welcome to {{title}}</p>-->
+        <form [formGroup]="loginForm">
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">Email</i>
+              <input type="text" name="Email" formControlName="email" class="inputAlign">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">Password</i>
+              <input type="text" name="Password" formControlName="password" class="inputAlign">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <button class="btn-large btn-submit" (click)="submit()" type="submit">Login</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
