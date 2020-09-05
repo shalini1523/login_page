@@ -3,6 +3,14 @@
 }
 h3 {
   background-color: pink;
+  color: brown;
   padding: 20px;
   margin: 0;
+}
+i {
+  color: darkcyan;
+}
+.btn-large {
+  background-color: blueviolet;
+  color: white;
 }

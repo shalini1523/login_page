@@ -15,6 +15,10 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { MailComponent } from './mail/mail.component';
 import {MatIconModule} from "@angular/material/icon";
 import {MatSelectModule} from "@angular/material/select";
+import { FormpageComponent } from './formpage/formpage.component';
+import { TodosComponent } from './todos/todos.component';
+import {MatTabsModule} from "@angular/material/tabs";
+import { EcoreComponent } from './ecore/ecore.component';
 
 
 @NgModule({
@@ -24,7 +28,10 @@ import {MatSelectModule} from "@angular/material/select";
     LoginComponent,
     QuestionlistComponent,
     NewQuestiComponent,
-    MailComponent
+    MailComponent,
+    FormpageComponent,
+    TodosComponent,
+    EcoreComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +42,9 @@ import {MatSelectModule} from "@angular/material/select";
     MatDialogModule,
     BrowserAnimationsModule,
     MatIconModule,
-    MatSelectModule
+    MatSelectModule,
+    BrowserAnimationsModule,
+    MatTabsModule
   ],
   entryComponents: [NewQuestiComponent],
   providers: [],
